@@ -1,0 +1,24 @@
+$like-button-max-width: 485px;
+$like-button-max-height: 240px;
+
+.likecoin-like-button {
+  max-width: $like-button-max-width;
+  max-height: $like-button-max-height;
+  margin: 0 auto; // Align center
+
+  > div {
+    position: relative;
+
+    // Maintain aspect ratio of the iframe
+    padding-top: $like-button-max-height / $like-button-max-width * 100%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
