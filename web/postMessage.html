@@ -1,0 +1,12 @@
+<div class="likecoin-embed likecoin-like-button">
+  <div>
+    <iframe scrolling="no" frameborder="0" src="https://button.like.co/in/embed/ckxpress/button/"></iframe>
+  </div>
+</div>
+
+<script>
+var likeButtonIframe = document.getElementsByTagName('iframe')[0];
+likeButtonIframe.addEventListener('load', function() {
+  likeButtonIframe.contentWindow.postMessage({ action: 'SET_REFERRER', content: { referrer: window.location.href }}, 'https://button.like.co');
+})
+</script>

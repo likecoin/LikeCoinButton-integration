@@ -30,3 +30,11 @@ https://button.like.co/in/embed/{{LikerID}}/button?referrer={{referrer}}&type={{
 #### 2.2 Embed the [sample HTML](index.html) and replace `{{ src }}` with the embed URL into your HTML
 
 #### 2.3 Include the [CSS code](style.css)
+#### 2.4 (Optional) Update referrer via [postMessage](postMessage.html)
+The LikeButton iframe's src (especially the `referrer` param) should be updated to when the window location is changed. In case updating iframe's src is not possible (e.g. for some SPA usecases), call `postMessage()` to iframe with following payload to update the referrer.
+```
+{
+  action: 'SET_REFERRER',
+  content: { referrer: `${ newReferrer||window.location.href }` }
+}, 'https://button.like.co'
+```
