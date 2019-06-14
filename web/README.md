@@ -25,7 +25,7 @@ https://button.like.co/in/embed/{{LikerID}}/button?referrer={{referrer}}&type={{
 
 > For testing purpose, you may use `button.rinkeby.like.co` instead of `button.like.co`
 
-> In case of iframe sandbox, `allow-scripts`, `allow-same-origin`, `allow-popups` `allow-popups-to-escape-sandbox`, `allow-storage-access-by-user-activation` are needed for proper register/login functionality.
+> In case of iframe sandbox, `allow-scripts`, `allow-same-origin`, `allow-popups` `allow-popups-to-escape-sandbox`, `allow-top-navigation-by-user-activation`, `allow-storage-access-by-user-activation` are needed for proper register/login functionality.
 
 #### 2.2 Embed the [sample HTML](index.html) and replace `{{ src }}` with the embed URL into your HTML
 
