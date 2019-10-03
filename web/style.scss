@@ -2,6 +2,7 @@ $like-button-max-width: 485px;
 $like-button-max-height: 240px;
 
 .likecoin-like-button {
+  width: 100%;
   max-width: $like-button-max-width;
   max-height: $like-button-max-height;
   margin: 0 auto; // Align center
