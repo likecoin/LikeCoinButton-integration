@@ -1,14 +1,14 @@
-.likecoin-like-button {
+.likecoin-button {
+  position: relative;
   width: 100%;
   max-width: 485px;
   max-height: 240px;
   margin: 0 auto;
 }
-.likecoin-like-button > div {
-  position: relative;
+.likecoin-button > div {
   padding-top: 49.48454%;
 }
-.likecoin-like-button > div iframe {
+.likecoin-button > iframe {
   position: absolute;
   top: 0;
   left: 0;
