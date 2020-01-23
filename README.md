@@ -1,6 +1,6 @@
-## LikeButton Integration
+## LikeCoin Button Integration
 
-This repo provides example code for LikeButton integration
+This repo provides example code for LikeCoin button integration
 
 - [Web](web/README.md)
 - [WordPress](https://wordpress.org/plugins/likecoin/)
